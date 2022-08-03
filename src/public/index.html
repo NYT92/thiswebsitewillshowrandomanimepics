@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>this website will show random anime pics</title>
+    <meta
+      name="twitter:description"
+      content="this website will show random anime pics when u refresh...."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="description"
+      content="this website will show random anime pics when u refresh...."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://thiswebsitewillshowrandomanimepics.vercel.app/waifu" />
+    <meta
+      name="twitter:title"
+      content="this website will show random anime pics"
+    />
+    <meta name="twitter:description" content="this website will show random anime pics when u refresh...." />
+    <meta name="twitter:image" content="https://thiswebsitewillshowrandomanimepics.vercel.app/waifu" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Anek+Latin&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
+  </head>
+
+  <body style="background: #191919; padding-top: 35px">
+    <div class="container" style="padding-bottom: 35px">
+      <h3 class="text-center" style="font-family: 'Anek Latin', sans-serif">
+        This Website will show random anime pics (nsfw included)
+      </h3>
+      <div
+        class="row d-lg-flex justify-content-lg-center align-items-lg-center"
+        style="padding-top: 20px; padding-bottom: 20px"
+      >
+        <div
+          class="col d-sm-flex d-md-flex d-lg-flex d-xxl-flex justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xxl-center align-items-xxl-center"
+        >
+          <img
+            class="img-fluid"
+            id="rendered_img"
+            width="500"
+            alt="images"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col d-flex d-lg-flex justify-content-center justify-content-lg-center"
+          style="margin-bottom: 15px"
+        >
+          <button
+            class="btn btn-primary"
+            id="saveimg"
+            type="button"
+            style="margin: 5px"
+          >
+            <i class="fas fa-file-download"></i>&nbsp;Save Images</button
+          ><button
+            class="btn btn-primary"
+            id="refresh"
+            type="button"
+            style="margin: 5px"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              class="bi bi-arrow-counterclockwise"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"
+              ></path>
+              <path
+                d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"></path></svg>&nbsp;Reload
+          </button>
+        </div>
+      </div>
+      <p class="text-center" style="font-family: 'Anek Latin', sans-serif">
+        ALL IMAGES DATA SOURCE ARE FROM WAIFU.IM, RULE34 AND WAIFU.PICS
+      </p>
+      <p class="text-center" style="font-family: 'Anek Latin', sans-serif">
+        Each Request of the image source are store in X-Origin-Source header
+      </p>
+      <form id="select_data_source">
+        <select class="form-select" id="item_select">
+          <optgroup label="SFW">
+            <option value="waifu" selected="">Waifu (waifu.pics)</option>
+            <option value="neko">Neko (waifu.pics)</option>
+            <option value="hug">Hug (waifu.pics)</option>
+            <option value="kiss">Kiss (waifu.pics)</option>
+            <option value="maid">Maid (waifu.im)</option>
+          </optgroup>
+          <optgroup label="NSFW">
+            <option value="waifunsfw">Waifu (waifu.pics)</option>
+            <option value="yaoi">Yaoi (r34)</option>
+            <option value="yuri">Yuri (r34)</option>
+            <option value="nekonsfw">Neko (waifu.pics)</option>
+            <option value="trap">Trap (waifu.pics)</option>
+            <option value="maidnsfw">Maid (waifu.im)</option>
+          </optgroup>
+        </select>
+      </form>
+      <p
+        style="
+          margin-top: 20px;
+          text-align: center;
+          font-family: 'Anek Latin', sans-serif;
+        "
+      >
+        Made with Nodejs , Expressjs , Bootstrap by
+        <a href="https://github.com/nyt92" target="_blank">NYT92</a> / Hosted On
+        <a href="https://vercel.com" target="_blank">Vercel</a>
+      </p>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+  </body>
+</html>
