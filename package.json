@@ -20,7 +20,8 @@
     "express": "^4.17.1",
     "express-limiter": "^1.6.1",
     "got": "^11.8.5",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
